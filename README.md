@@ -1,1 +1,1 @@
-# yii2-db-view
+# yii2-database-view
