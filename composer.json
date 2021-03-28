@@ -1,5 +1,5 @@
 {
-    "name": "denis909/yii2-db-view",
+    "name": "denis909/yii2-database-view",
     "license": "MIT",
     "autoload": {
         "psr-4": {
