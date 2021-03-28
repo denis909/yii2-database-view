@@ -4,10 +4,8 @@ namespace denis909\yii;
 
 use Yii;
 
-abstract class DbView extends \yii\db\ActiveRecord
+abstract class DatabaseView extends \yii\db\ActiveRecord
 {
-
-    use DbViewTrait;
 
     public static $tableName;
 
@@ -15,7 +13,7 @@ abstract class DbView extends \yii\db\ActiveRecord
 
     public static function dropTable(string $tableName)
     {
-        return static::dropDbView($tableName);
+        return SchemaHelper::dropDbView($tableName);
     }
 
     public static function tableName(bool $refresh = false)
